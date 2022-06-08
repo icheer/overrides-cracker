@@ -892,8 +892,15 @@
                         .banner-anchor,
                         .section-text-link-ads2,
                         .section-demo ~ *,
+                        .header,
                         .footer {
                           display: none;
+                        }
+                        .ex-speakers {
+                          height: 370px !important;
+                        }
+                        #ex_textarea {
+                          height: 500px !important;
                         }
                       `;
                       document.head.appendChild(style);
