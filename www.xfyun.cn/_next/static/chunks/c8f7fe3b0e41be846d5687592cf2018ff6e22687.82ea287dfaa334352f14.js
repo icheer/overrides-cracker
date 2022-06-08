@@ -811,6 +811,7 @@
                   });
                 }
               },
+              // 这里增加一个魔改方法: rec
               {
                 key: 'rec',
                 value: function (name) {
@@ -883,7 +884,7 @@
                         console.error('The following getUserMedia error occured: ' + err);
                       })
                     },
-                    // css隐藏网页中的其他内容,让界面干净一点
+                    // css隐藏网页中的其他内容,让界面干净一点; 移除掉过多的console.log信息
                     pretty: () => {
                       window.console.log = () => null;
                       const style = document.createElement('style');
